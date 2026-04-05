@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException, Depends, Header
 from bson import ObjectId
-from app.db import users
-from app.auth import hash_password, verify_password, create_token, decode_token
-from app.models import UserCreate, LoginRequest
+from src.db import users
+from src.auth import hash_password, verify_password, create_token, decode_token
+from src.models import UserCreate, LoginRequest
 
 app = FastAPI()
 
